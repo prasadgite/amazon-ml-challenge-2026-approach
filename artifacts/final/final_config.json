@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "status": "FROZEN",
+
+  "pipeline": {
+    "blocking": "B5",
+    "features": "E0",
+    "model": "logistic_regression",
+    "calibration": "platt",
+    "decision_policy": "P1-A",
+    "consolidation": "M8"
+  },
+
+  "blocking": {
+    "name": "B5",
+    "enable_alias_blocking": true,
+    "enable_transliteration": true,
+    "enable_country_fallback": true,
+    "enable_smart_capping": true,
+    "enable_secondary_identity": false
+  },
+
+  "features": {
+    "name": "E0",
+    "feature_count": 38
+  },
+
+  "model": {
+    "type": "logistic_regression"
+  },
+
+  "calibration": {
+    "method": "platt"
+  },
+
+  "decision_policy": {
+    "name": "P1-A",
+    "primary_threshold": 0.875,
+    "strong_evidence_threshold": 0.7,
+    "minimum_strong_evidence_count": 1
+  },
+
+  "consolidation": {
+    "name": "M8"
+  },
+
+  "data_integrity": {
+    "test_data_used_for_tuning": false,
+    "test_labels_used_for_tuning": false,
+    "secondary_identity_enabled": false
+  }
+}

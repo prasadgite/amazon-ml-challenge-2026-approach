@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "status": "FROZEN",
+
+  "model": {
+    "family": "logistic_regression",
+    "artifact": "m9_frozen_match_model.pkl"
+  },
+
+  "calibration": {
+    "method": "platt",
+    "artifact": "m9_frozen_decision_policy.pkl"
+  },
+
+  "features": {
+    "name": "E0",
+    "feature_count": 38
+  },
+
+  "decision_policy": {
+    "name": "P1-A",
+    "primary_threshold": 0.875,
+    "strong_evidence_threshold": 0.7,
+    "minimum_strong_evidence_count": 1
+  },
+
+  "training": {
+    "test_data_used": false,
+    "test_labels_used": false
+  }
+}
